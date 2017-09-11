@@ -5,15 +5,15 @@ obj_list := $(src_list:%.c=%.o)
 
 CFLAGS := -Ieasy_setup -Iproto
 
-.PHONY: setup
+.PHONY: airkiss_setup
 
-setup:$(obj_list)
+airkiss_setup:$(obj_list)
 	$(CC) -o $@ $^
 	
 %.o:%.c
 	$(CC) -c $(CFLAGS) -o $@ $^
 
 clean:
-	rm -rf $(obj_list) setup
+	rm -rf $(obj_list) airkiss_setup
 
 
