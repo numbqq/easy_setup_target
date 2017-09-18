@@ -174,6 +174,9 @@ int main(int argc, char* argv[])
     /* must do this! */
     easy_setup_stop();
 
+    if (killed)
+      return -1;
+
     return 0;
 }
 
