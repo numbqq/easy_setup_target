@@ -12,7 +12,7 @@
 
 #define ES_TARGET_VERSION "v3.6.0"
 
-#define QUERY_TIMEOUT_MS (30*1000)
+#define QUERY_TIMEOUT_MS (60*1000)
 #define QUERY_INTERVAL_MS (1000)
 
 #define WLAN_IFACE "wlan0"
